@@ -1,0 +1,27 @@
+---
+// Importing from Astro
+import { Image } from 'astro:assets';
+
+//Importing Images
+import ElectricalEngineering from '/public/ElectricalEngineering.png'
+
+//Importing Components
+import MainLayout from '../Layouts/MainLayout.astro';
+import Hero from '../Components/Hero/Hero.astro';
+import OurClients from '../Components/OurClients/OurClients.astro'
+import SectionLayout from '../Layouts/SectionLayout.astro';
+---
+
+<MainLayout site='Inicio'>
+	<Hero />
+	<OurClients />
+	<SectionLayout>
+		<figure class="w-60">
+			<Image src={ElectricalEngineering} alt="" />
+		</figure>
+		<div class="mx-10 max-w-lg">
+			<h1 class="font-extrabold text-4xl uppercase text-gray-800">Ingeniería Eléctrica</h1>
+			<p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed magnam animi aut atque ad eum ratione nemo sunt non rem, saepe laborum molestiae doloribus corporis. Eaque officia accusantium dignissimos molestias atque quo aspernatur, rerum voluptatibus repudiandae consequatur beatae quaerat ex voluptate at iste</p>
+		</div>
+	</SectionLayout>
+</MainLayout>

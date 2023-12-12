@@ -1,0 +1,16 @@
+---
+
+interface Props {
+    ctaContent: string;
+    ctaDir: string;
+    lrnContent: string;
+    lrnDir: string;
+}
+
+const { ctaContent, ctaDir, lrnContent, lrnDir } = Astro.props;
+
+---
+
+
+<a href={ctaDir} class=" transition-all rounded-md bg-emerald-900 px-3.5 py-2.5 text-sm font-semibold text-emerald-300 shadow-sm hover:bg-transparent hover:ring-1 hover:ring-emerald-500 hover:text-emerald-800 hover:font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">{ctaContent}</a>
+<a href={lrnDir} class=" transition-all text-sm font-semibold leading-6 text-gray-900">{lrnContent + ' '}<span aria-hidden="true">→</span></a>

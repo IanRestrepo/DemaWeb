@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import DemaLogo from '/public/DemaLogo.png';
+
+const Paths = [
+    {site: 'Inicio', slug: ''},
+    {site: 'Sobre Nosotros', slug: 'sobre-nosotros'},
+    {site: 'Contacto', slug: 'contacto'}
+];
+
+---
+
+<nav class='flex justify-between px-8 py-4 items-center sticky top-0 z-40'>
+    <figure>
+        <Image src={DemaLogo} alt={'Logo of DEMA'} width={80}/>
+    </figure>
+    <ul class='flex justify-between gap-4 items-center'>
+        {
+            Paths.map((p) => (
+                <li><a href={'/' + p.slug}>{p.site}</a></li>
+            ))
+        }
+    </ul>
+</nav>
