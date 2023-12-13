@@ -4,15 +4,17 @@ import DemaLogo from '/public/DemaLogo.png';
 
 const Paths = [
     {site: 'Inicio', slug: ''},
-    {site: 'Sobre Nosotros', slug: 'sobre-nosotros'},
+    {site: 'Sobre Nosotros', slug: '#aboutus'},
     {site: 'Contacto', slug: 'contacto'}
 ];
 
 ---
 
-<nav class='flex justify-between px-8 py-4 items-center sticky top-0 z-40'>
+<nav class='flex justify-between px-8 py-4 items-center sticky top-0 z-40 bg-white/30 backdrop-blur-xl'>
     <figure>
-        <Image src={DemaLogo} alt={'Logo of DEMA'} width={80}/>
+        <a href='/''>
+            <Image src={DemaLogo} alt={'Logo of DEMA'} width={80}/>
+        </a>
     </figure>
     <ul class='flex justify-between gap-4 items-center'>
         {
