@@ -1,0 +1,31 @@
+---
+interface Props {
+    MiniService: string,
+    Service: string,
+    ServiceDesc: string,
+    ServiceSrc: string;
+}
+
+const { MiniService, Service, ServiceDesc, ServiceSrc } = Astro.props;
+---
+
+
+<article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg max-w-sm">
+    <img
+      alt=""
+      src={ ServiceSrc }
+      class="h-56 w-full object-cover"
+    />
+  
+    <div class="p-4 sm:p-6 bg-[#052e16] text-white">
+      <time datetime="2022-10-10" class="block text-xs text-gray-500"> { MiniService } </time>
+  
+      <a href="#">
+        <h3 class="mt-0.5 text-lg text-green-150">{ Service }</h3>
+      </a>
+  
+      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+        { ServiceDesc }
+      </p>
+    </div>
+  </article>

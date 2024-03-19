@@ -3,12 +3,18 @@ import { Image } from 'astro:assets';
 import Sauzal from './Sauzal.png';
 import Cotecnova from './Cotecnova.png';
 import SuperServicios from './SuperServicios.png';
+import Condivalle from './Condivalle.png';
+import Humanismo from './Humanismo.png';
+import Avicola from './avicola.png'
 ---
 
 <div class="flex justify-between gap-5 px-14 bg-gray-200 py-5 overflow-hidden" id='aboutus'>
+    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={Sauzal} alt='Hello' width={100}/>
+    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={Condivalle} alt='Hello' width={100}/>
+    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={Humanismo} alt='Hello' width={100} height={150}/>
+    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={SuperServicios} alt='Hello' width={150}/>
     <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={Sauzal} alt='Hello' width={150}/>
-    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={Cotecnova} alt='Hello' width={200}/>
-    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={SuperServicios} alt='Hello' width={100}/>
-    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={SuperServicios} alt='Hello' width={100}/>
-    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={SuperServicios} alt='Hello' width={100}/>
+    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={Avicola} alt='Hello' width={150}/>
+
+
 </div>

@@ -10,6 +10,7 @@ import MainLayout from "../Layouts/MainLayout.astro";
 import Hero from "../Components/Hero/Hero.astro";
 import OurClients from "../Components/OurClients/OurClients.astro";
 import SectionLayout from "../Layouts/SectionLayout.astro";
+import ImageCard from "../Components/ImageCard/ImageCard.astro";
 ---
 
 <MainLayout site="Inicio">
@@ -60,47 +61,28 @@ import SectionLayout from "../Layouts/SectionLayout.astro";
   </SectionLayout>
 
   <SectionLayout>
-    <div class="flex flex-wrap gap-4">
+    <div class="flex flex-wrap gap-2">
 
+      <ImageCard
+        ServiceSrc={"https://aireacondicionadosas.com/8-large_default/mantenimiento-de-aires-acondicionados.jpg"}
+        Service={"Montaje de Aires Acondicionados"}
+        MiniService={"Mantenimiento y Montaje Aires Acondicionados"}
+        ServiceDesc={"Realizamos todo tipo de mantenimiento preventivo y reparación de Aires acondicionados asi como su profesional instalación."}
+      />
+  
+      <ImageCard
+      ServiceSrc={"https://plantas-de-emergencia.com.mx/wp-content/uploads/2017/09/Revisi%C3%B3n.jpg"}
+      Service={"Motores y Plantas de Emergencia."}
+      MiniService={"Motores y Plantas de Emergencia"}
+      ServiceDesc={"Nuestros ingenieros tienen años de experiencia en el mantenimiento, reparación e instalación de Motores y Plantas de emergencia."}
+    />
 
-      <div
-      class="relative grid h-[25rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
-      <div
-        class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://www.stelorder.com/wp-content/uploads/2022/01/portada-mantenimiento-electrico.jpg')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
-        <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
-      </div>
-      <div class="relative p-6 px-6 py-14 md:px-12">
-        <h2 class="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
-          Mantenimiento de instalaciones eléctricas de todo tipo.
-        </h2>
-      </div>
-    </div> 
-    
-    <div
-    class="relative grid h-[25rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
-    <div
-      class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://www.genmaq.com.co/wp-content/uploads/2022/05/mantenimiento-correctivo-plantas-electtricas-genmaq.jpg')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
-      <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
-    </div>
-    <div class="relative p-6 px-6 py-14 md:px-12">
-      <h2 class="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
-        Instalación y mantenimiento de motores y plantas de emergencia.
-      </h2>
-    </div>
-  </div>  
-
-  <div
-  class="relative grid h-[25rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
-  <div
-    class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://www.geningenieria.com/wp-content/uploads/2019/06/instalacion.jpg')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
-    <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
-  </div>
-  <div class="relative p-6 px-6 py-14 md:px-12">
-    <h2 class="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
-      Montaje y mantenimiento de aires acondicionados.
-    </h2>
-  </div>
-</div> 
+    <ImageCard
+    ServiceSrc={'https://img.freepik.com/foto-gratis/hombre-tecnico-electrico-que-trabaja-cuadro-distribucion-fusibles-usa-tableta_169016-24811.jpg'}
+    Service={"Mantenimiento de Instalaciones Electricas"}
+    MiniService={"Mantenimiento de Instalaciones"}
+    ServiceDesc={"Nuestro servicio de mantenimiento de instalaciones electricas de todo tipo es ideal para ti, nuestros ingenieros se encargaran de entregarte un trabajo profesional"}
+  />
 
     </div>
   </SectionLayout>
