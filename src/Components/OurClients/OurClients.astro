@@ -8,13 +8,29 @@ import Humanismo from './Humanismo.png';
 import Avicola from './avicola.png'
 ---
 
-<div class="flex justify-between gap-5 px-14 bg-gray-200 py-5 overflow-hidden" id='aboutus'>
-    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={Sauzal} alt='Hello' width={100}/>
-    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={Condivalle} alt='Hello' width={100}/>
-    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={Humanismo} alt='Hello' width={100} height={150}/>
-    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={SuperServicios} alt='Hello' width={150}/>
-    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={Sauzal} alt='Hello' width={150}/>
-    <Image class='grayscale hover:grayscale-0 transition-all cursor-pointer' src={Avicola} alt='Hello' width={150}/>
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+        <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">Las compañias que han confiado en nosotros...</h2>
+        <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
+            <a href="#" class="flex justify-center items-center"> 
+                <img src={SuperServicios.src} alt="" class="h-20 grayscale hover:grayscale-0">
+            </a>
+            <a href="#" class="flex justify-center items-center grayscale hover:grayscale-0">          
+                <img src={Sauzal.src} alt="" class="18">                                   
+            </a>
+            <a href="#" class="flex justify-center items-center grayscale hover:grayscale-0"> 
+                <img src={Condivalle.src} alt="" class="h-20"/>                                                              
+            </a>
 
-
-</div>
+            <a href="#" class="flex justify-center items-center grayscale hover:grayscale-0">    
+                <img src={Avicola.src} alt="" class="h-20">                                                                               
+            </a>
+            <a href="#" class="flex justify-center items-center grayscale hover:grayscale-0">
+                <img src={Humanismo.src} alt="" class="h-20">    
+            </a>
+            <a href="#" class="flex justify-center items-center grayscale hover:grayscale-0">
+                <img src="https://cdnx.jumpseller.com/blesscard/image/11573074/Dise_o_sin_t_tulo__9_.png.png?1599765208" alt="">                                                                              
+            </a>
+        </div>
+    </div>
+</section>
